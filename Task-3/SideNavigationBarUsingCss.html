@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <style>
+    .sidenav {
+      height: 100%;
+      width: 30%;
+      position: fixed;
+      background-color: rgb(0, 0, 0);
+      top: 0;
+      left: 0;
+    }
+    .sidenav a{font-size: 112.5- 0.25vw;}
+    footer {
+      background-color: #555;
+      color: white;
+      padding: 15px;
+    }
+    @media screen and (max-width: 450px) {
+      .sidenav {
+        width:30%;
+        padding-top: 15px;
+      }
+      .sidenav a {font-size: 10px;}
+      .main{margin-left:30%;}
+      .container-fluid{margin-left: 30%;}
+      ul {margin-left: 2px}
+    }
+    
+    .main{
+      margin-left:30%;
+      padding: 0px 10px;
+    }
+    .container-fluid {
+      height: 10%;
+      margin-left: 30%;
+      margin-bottom: 0px;
+    }
+    ul {
+      margin-left: 10px;
+    }
+  </style>
+</head>
+<body>
+  <div class="sidenav">
+      <small><img class="img-responsive" src="http://iosd.tech/img/iosd/IOSD-logo.png"></small><br>
+      <ul class="nav nav-pills nav-stacked">
+        <li class="active"><a data-toggle="tab" href="#home">Home</a></li>
+        <li><a data-toggle="tab" href="#projects">Projects</a></li>
+        <li><a data-toggle="tab" href="#events">Events</a></li>
+        <li id="psagaid"style="font-family: Arial, Helvetica, sans-serif;"><a data-toggle="tab" href="#psaga">PLACEMENTSAGA</a></li>
+        <li><a data-toggle="tab" href="#blog">Blog</a></li>
+        <li><a data-toggle="tab" href="#github">GitHub</a></li><hr>
+        <li><a data-toggle="tab" href="#about">About</a></li>
+      </ul>
+  </div>
+  <div class="main">
+      <h4 style="font-family:"Lucida Console", Monaco, monospace;"><small>International Organisation of Software Developers</small></h4>
+      <hr>
+      <h2>Welcome IOSD</h2><hr style="width:20%; height:0.5px; margin-left:0; background-color:gray;">
+      <div class="tab-content">
+        <div id="home" class="tab-pane fade in active" style="height:800px;">
+        <h3>HOME</h3>
+        <p>...</p>
+        </div>
+        <div id="projects" class="tab-pane fade" style="height:800px;">
+          <h3>Projects</h3>
+          <p>...</p>
+        </div>
+        <div id="events" class="tab-pane fade" style="height:800px;">
+        <h3>Events</h3>
+        <p>...</p>
+        </div>
+        <div id="psaga" class="tab-pane fade" style="height:800px;">
+        <h3>PLACEMENTSAGA</h3>
+        <p>...</p>
+        </div>
+        <div id="blog" class="tab-pane fade"style="height:800px;">
+          <h3>Blog</h3>
+          <p><h4><small>RECENT POSTS</small></h4></p>
+        </div>
+        <div id="github" class="tab-pane fade" style="height:800px;">
+        <h3>GitHub</h3>
+        <p>...</p>
+        </div>
+        <div id="about" class="tab-pane fade" style="height:800px;">
+        <h3>ABOUT</h3><hr>
+        <p>We are growing community of Software Developer.</p>
+        </div>
+      </div>
+    </div>
+  <footer class="container-fluid">
+    <p>Our Partners : </p>
+  </footer>
+</body>
+</html>
