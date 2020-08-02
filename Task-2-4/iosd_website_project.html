@@ -9,10 +9,11 @@
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
   <style>
     #preloader{
-      top:40%;
-      left: 45vw;
-      width:50%;
-      position: absolute;
+      display:flex;
+      justify-content: center;
+      align-items: center;
+      height:100%;
+      width:100%;
       z-index: 1;
       position:fixed;
       transition: opacity 0.3s linear;
@@ -26,6 +27,9 @@
       to{bottom:0px; opacity:1;}
     }
 
+    .clearfix {
+      overflow:auto;
+    }
 
     @media screen and (max-width: 767px) {
       .sidenav {
