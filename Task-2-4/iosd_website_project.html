@@ -80,12 +80,10 @@
 var myVar;
 
 function myFunction() {
-  myVar = setTimeout(showPage, 5000);
-}
-
-function showPage() {
+  myVar = setTimeout(() => {
   document.getElementById("preloader").style.display = "none";
   document.getElementById("animate").style.display = "block";
+} , 5000);
 }
 </script>
 </body>
