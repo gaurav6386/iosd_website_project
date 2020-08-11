@@ -16,9 +16,12 @@
     li:hover > ul.dropdown-menu li{
       display: block;
     }
+    .dropdown-menu{
+      background: lightgray;
+    }
     li:hover > ul.dropdown-menu li{
       opacity:0;
-      animation: menu1 700ms ease-in-out forwards;
+      animation: menu1 500ms ease-in-out forwards;
     }
     @keyframes menu1 {
       0%  {opacity: 0; transform: rotateX(-90deg) }
@@ -31,14 +34,13 @@
 <body style="height:1200px;">
   <nav class="navbar navbar-expand-sm bg-dark navbar-dark fixed-top">
     <!--Brand-Logo-->
-    <a href="#" class="nav-brand"><img src="http://iosd.tech/img/iosd/IOSD-logo.png" width="110px" height="30px"></a>
+    <a data-toggle="tab" href="#home" class="nav-brand"><img src="http://iosd.tech/img/iosd/IOSD-logo.png" height="25px"></a>
 
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
       <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse" id="collapsibleNavbar">
       <ul class="navbar-nav">
-        <li class="nav-brand"></li>
         <li class="nav-item dropdown"><a href="#" class="nav-link dropdown-togggle" id="navbardrop"
             data-toggle="dropdown">Projects</a>
           <ul class="dropdown-menu menu-1">
@@ -110,8 +112,21 @@
         </li>
       </ul>
     </div>
-
   </nav>
+  
+<div class="main">
+  <h4 style="font-family:'Lucida Console', Monaco, monospace; margin-top: 70px;"><small>International Organisation of Software Developers</small></h4>
+  <hr>
+  <h2>Welcome to IOSD</h2><hr style="width:20%; height:0.5px; margin-left:0; background-color:gray;">
+  <div class="tab-content">
+    <div id="home" class="tab-pane fade in active" style="height:800px;">
+    <h3>HOME</h3>
+    <p>...</p>
+    </div>
+  </div>
+</div>
+
+
 </body>
 
 </html>
