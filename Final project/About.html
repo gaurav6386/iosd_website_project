@@ -8,6 +8,7 @@
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="style.css">
   <header>
     <div class="container-fluid">
 
@@ -33,105 +34,9 @@
       </div>
     </div>
   </header>
-  <style>
-    .navbar {
-      margin-bottom: 0;
-      border-radius: 0;
-      background-color: indigo[200];
-    }
-
-    .contactUsHeading {
-      height: 50vh;
-      width: 100vw;
-      margin-bottom: 10vh;
-      padding-top: 35vh;
-      background-image: url("background.jpg");
-      background-repeat: no-repeat;
-      background-size: cover;
-      background-position: center center;
-      opacity: 0.8;
-    }
-
-    header {
-      position: sticky;
-      top: 0px;
-      background-color: white;
-      width: 100vw;
-      border-bottom: 100px solid grey;
-      border-width: 0.1vh;
-      padding-bottom: 0%;
-      padding-top: 1%;
-      z-index: 1;
-
-    }
-
-    .nav-links>ul {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      list-style-type: none;
-    }
-
-    .nav-link {
-      position: relative;
-    }
-
-    .nav-link>a {
-      line-height: 3rem;
-      color: grey;
-      padding: 0 .8rem;
-      letter-spacing: 1px;
-      font-size: .95rem;
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      transition: .5s;
-      style: none;
-    }
-
-    .nav-link:hover>a {
-      transform: scale(1.1);
-      text-decoration: none;
-      color: #45a049;
-    }
-
-    footer {
-      background-color: grey;
-      padding: 25px;
-    }
-
-    .carousel-inner img {
-      width: 100%;
-      margin: auto;
-      min-height: 200px;
-    }
-
-
-    @media (max-width: 600px) {
-      .carousel-caption {
-        display: none;
-      }
-
-      @media (max-width: 300px) {
-        .navbar-nav {
-          flex: initial;
-          width: 100%;
-        }
-
-        .nav-link {
-          width: 100%;
-          opacity: 0;
-          transform: translateY(15px);
-        }
-
-      }
-  </style>
 </head>
 
 <body>
-
-
-
   <div id="myCarousel" class="carousel slide" data-ride="carousel">
     <!-- Indicators -->
     <ol class="carousel-indicators">
@@ -172,12 +77,21 @@
   <div class="container text-center">
     <h3>What We Do</h3><br>
     <div class="row">
-
+      <div class="col-sm-4">
+        <img src="https://iosd.tech/img/open-src.jpg" class="img-responsive" style="width:100%" alt="Image">
+        <p>Project 1</p>
+      </div>
       <div class="col-sm-4">
         <img src="https://iosd.tech/img/open-src.jpg" class="img-responsive" style="width:100%" alt="Image">
         <p>Project 2</p>
       </div>
       <div class="col-sm-4">
+        <img src="https://iosd.tech/img/open-src.jpg" class="img-responsive" style="width:100%" alt="Image">
+        <p>Project 3</p>
+      </div>
+    </div>
+    <div class="container">
+      <div class="col-sm-12 text-center">
         <div class="well">
           <p>IOSD International Organization of Software Development
             Over the last half-decade, the number of young people in India embarking on a career path in software has
@@ -196,39 +110,52 @@
       </div>
     </div>
   </div><br>
+  <div class="container">
+    <div class="col-sm-4">
+      <div class="well">
+        <p>box</p>
+      </div>
+      <div class="well">
+        <p>Our Vision
+          box</p>
+      </div>
+    </div>
 
-  <div class="col-sm-4">
-    <div class="well">
-      <p>box</p>
+    <div class="col-sm-4">
+      <div class="well">
+        <p> status.</p>
+      </div>
+      <div class="well">
+        <p> Open Source.</p>
+      </div>
     </div>
-    <div class="well">
-      <p>Our Vision
-        box</p>
+    <div class="col-sm-4">
+      <div class="well">
+        <p> status.</p>
+      </div>
+      <div class="well">
+        <p>Open Source.</p>
+      </div>
     </div>
   </div>
-  </div>
-  </div><br>
 
-  <div class="col-sm-4">
-    <div class="well">
-      <p> status.</p>
+  <div class="container text-center">
+    <h3>Our Partners</h3>
+    <br>
+    <div class="row" style="">
+      <div class="col-sm-4">
+        <img src="https://placehold.it/150x80?text=IMAGE" class="img-responsive" style="width:100%" alt="Image">
+        <p>Partner 1</p>
+      </div>
+      <div class="col-sm-4">
+        <img src="https://placehold.it/150x80?text=IMAGE" class="img-responsive" style="width:100%" alt="Image">
+        <p>Partner 2</p>
+      </div>
+      <div class="col-sm-4">
+        <img src="https://placehold.it/150x80?text=IMAGE" class="img-responsive" style="width:100%" alt="Image">
+        <p>Partner 3</p>
+      </div>
     </div>
-    <div class="well">
-      <p> Open Source.</p>
-    </div>
-  </div>
-  </div>
-  </div><br>
-
-  <div class="col-sm-4">
-    <div class="well">
-      <p> status.</p>
-    </div>
-    <div class="well">
-      <p>Open Source.</p>
-    </div>
-  </div>
-  </div>
   </div><br>
 
   <footer class="container-fluid text-center">
